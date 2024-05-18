@@ -1,0 +1,40 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 80vw; /* Breite des Elements */
+  margin: 0 auto; /* Alles in die Mitte packen */
+  margin-top: 50px; /* Abstand zum oberen Seitenrand */
+}
+
+h1 {
+  color: IndianRed; /* Textfarbe */
+}
+
+h2 {
+  font-family: mono;
+  background-color: DarkSlateGrey; /* Hintergrundfarbe */
+  color: BlanchedAlmond;
+  padding: 5px; /* Abstand des Texts zum Elementrand */
+}
+
+.kleines-bild {
+  width: 200px; /* Bildgröße */
+  margin-left: 30px; /* Abstand nach links */
+  float: right; /* Rechts positionieren, während der Text links bleibt */
+}
+
+.winziges-bild {
+  height: 12px; /* Bildhöhe soll ungefähr der Texthöhe entsprechen */
+}
+
+.abstand {
+  height: 20vh; /* Höhe des Abstands-Elements */
+}
+
+.kleiner-paragraph {
+  font-size: 12px; /* Textgröße */
+  color: grey; /* Textfarbe */
+  text-align: center; /* Text-Zentrierung */
+}
