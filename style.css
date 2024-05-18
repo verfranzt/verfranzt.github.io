@@ -1,40 +1,65 @@
-html {
-  font-family: sans-serif;
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  width: 80vw; /* Breite des Elements */
-  margin: 0 auto; /* Alles in die Mitte packen */
-  margin-top: 50px; /* Abstand zum oberen Seitenrand */
+body{
+  background: #030321;
+  font-family: Arial;
 }
 
-h1 {
-  color: IndianRed; /* Textfarbe */
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
 }
 
-h2 {
-  font-family: mono;
-  background-color: DarkSlateGrey; /* Hintergrundfarbe */
-  color: BlanchedAlmond;
-  padding: 5px; /* Abstand des Texts zum Elementrand */
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
 }
 
-.kleines-bild {
-  width: 200px; /* Bildgröße */
-  margin-left: 30px; /* Abstand nach links */
-  float: right; /* Rechts positionieren, während der Text links bleibt */
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
 }
 
-.winziges-bild {
-  height: 12px; /* Bildhöhe soll ungefähr der Texthöhe entsprechen */
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
 }
 
-.abstand {
-  height: 20vh; /* Höhe des Abstands-Elements */
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
 }
 
-.kleiner-paragraph {
-  font-size: 12px; /* Textgröße */
-  color: grey; /* Textfarbe */
-  text-align: center; /* Text-Zentrierung */
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
 }
